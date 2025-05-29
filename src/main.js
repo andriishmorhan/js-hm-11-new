@@ -56,5 +56,9 @@ async function onSubmit(event) {
   }
 }
 
-const data = await getImagesByQuery(searchQuery);
-console.log('DATA:', data);
+async function fetchData() {
+  const data = await getImagesByQuery(searchQuery);
+  console.log('DATA:', data);
+}
+
+fetchData();
