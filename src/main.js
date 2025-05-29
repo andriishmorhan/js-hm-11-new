@@ -55,3 +55,6 @@ async function onSubmit(event) {
     hideLoader();
   }
 }
+
+const data = await getImagesByQuery(searchQuery);
+console.log('DATA:', data);
